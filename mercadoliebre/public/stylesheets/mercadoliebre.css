@@ -1,0 +1,418 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #ebebeb;
+}
+
+/*CSS HEADER*/
+header {
+    background-color: #EAC926;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+    /*LOGO ML + BUSCADOR + TEXTO*/
+header div.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header div.encabezado img {
+    width: 150px;
+    margin-right: 15px;
+}
+
+header div.encabezado div.buscador {
+    position: relative;
+}
+
+header div.encabezado div.buscador input {
+    border: 0px;
+    border-radius: 5px;
+    width: 130px;
+    height: 25px;
+}
+
+header div.encabezado div.buscador i.fa-search {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 6px 2px 0 1px;
+    height: 19px;
+    position: absolute;
+    right: 6px;
+}
+
+header p {
+    font-size: 12px;
+}
+    /*MENU LISTA + MENU HAMBURGUESA*/
+header nav.listamenu ul li {
+    list-style: none;
+    font-size: 14px;
+}
+header nav.listamenu ul {
+    margin: 0px;
+    padding: 0px;
+    display: none;
+}
+
+header nav.listamenu ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+header div.menu {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #0044aa;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header div.menu:hover {
+    background-color: #0022aa;
+    cursor: pointer;
+}
+
+/*CSS BANNER*/
+
+section.banner img {
+    width: 100%;
+}
+
+/*CSS MAIN*/
+
+    /*SECTION + TITULOS*/
+main h2 {
+    font-size: 24px;
+    background-color: #ebebeb;
+    margin: 20px auto 20px 10%;
+}
+
+main section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main section article {
+    margin: 20px 15px;
+    background-color: white;
+    width: 300px;
+}
+
+main section article img {
+    width: 100%;
+}
+
+            /*CAJA INFERIOR DE LAS TARJETAS DE PRODUCTO*/
+main section article div.caja {
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main section article div.caja div.texto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+main section article div.caja div.texto p.precio {
+    font-size: 18px;
+    padding-left: 20px;
+}
+
+main section article div.caja div.texto p.descuento {
+    font-size: 16px;
+    color: #39b54a;
+    padding-left: 20px;
+}
+
+main section article h3 {
+    font-size: 16px;
+    display: none;
+    padding-left: 20px;
+}
+
+ main section article:hover h3 {
+    display: block;
+}
+
+main section article:hover {
+    box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+
+main section article div.caja i.fa-truck {
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 100%;
+    padding: 5px;
+    position: relative;
+    bottom: 15px;
+    left: 250px;
+    background-color: white;
+}
+
+/*CSS FOOTER*/
+
+footer {
+    padding: 20px 5%;
+    background-color: white;
+    text-align: center;
+}
+
+footer section article {
+    margin: 0 15px 50px 15px;
+}
+
+footer div {
+    text-align: left;
+    padding-left: 0;
+}
+
+footer section article h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+footer section article p {
+    margin-top: 0;
+}
+
+.fa-credit-card,.fa-gift,.fa-user-shield {
+    color: #03264c;
+    font-size: 30px;
+}
+
+/*CSS FORMULARIO LOGIN*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+input.login {
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+form p a {
+    text-decoration: none;
+    color: white;
+}
+
+button.buttonlogin {
+    background-color: #0044aa;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+button.buttonlogin:hover {
+    background-color: #0022aa;
+}
+
+/*CSS FORMULARIO REGISTRO*/
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+form h4.titulo label {
+    margin-left: 0;
+}
+h4.titulo {
+    font-weight: bold;
+    align-self: center;
+    margin: 5px 0;
+    width: 300px;
+}
+
+input.registro {
+    width: 280px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.fondo {
+    background-color: white;
+}
+
+form div.radioflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-around;
+}
+
+form div.checkboxflex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 300px;
+    line-height: 50px;
+}
+
+form div.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+form div.checkboxflex div.checkbox label {
+    width: 100px;
+}
+
+form div.button {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+form div.button a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttonsubmit {
+    background-color: #0044aa;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.buttonreset {
+    background-color: #aa0044;
+    color: white;
+    width: 300px;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border-width: 0px;
+}
+
+.buttonreset:hover {
+    background-color: #cc1155;
+}
+
+/*MEDIA QUERIES PARA TABLET*/
+
+@media (min-width:768px) {
+    /*Cambios HEADER*/
+    header {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header div.encabezado div.buscador input {
+        width: 270px;
+    }
+
+    header div.menu {
+        display: none;
+    }
+
+    header nav.listamenu {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 800px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav.listamenu ul {
+        display: flex;
+    }
+
+    header nav.listamenu ul li {
+        margin-left: 18px;
+        padding-top: 30px;
+    }
+
+    /*Cambios MAIN*/
+    main h2 {
+        margin-left: 15px;
+    }
+}
+
+/*MEDIA QUERIES PARA PC/LAPTOP*/
+
+@media (min-width:1024px) {
+    /*Cambios HEADER*/
+    header input {
+        width: 450px;
+    }
+    
+    header div.listamenu {
+        width: 950px;
+    }
+
+    /*Cambios MAIN*/
+    main section article {
+        width: 225px;
+    }
+
+    main section article div.caja i.fa-truck {
+        left: 180px;
+        transition-duration: 2s;
+        transform: rotateZ(0);
+    }
+
+    main section article:hover div.caja i.fa-truck {
+        transition-duration: 2s;
+        transform: rotateZ(-90deg);
+    }
+
+    /*Cambios FOOTER*/
+    footer {
+        padding: 40px 0 10px;
+    }
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+    footer article {
+        width: 300px;
+        margin-bottom: 10px;
+    }
+    footer div {
+        text-align: left;
+        margin-left: 30px;
+    }
+}
